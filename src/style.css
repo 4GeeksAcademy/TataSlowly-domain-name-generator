@@ -1,5 +1,14 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
-body{
-    background: white;
+ul {
+  width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+li {
+  margin: 4px 0;
 }
