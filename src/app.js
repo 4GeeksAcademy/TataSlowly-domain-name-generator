@@ -8,7 +8,7 @@ window.onload = function () {
   const list = document.getElementById("domainList");
 
   button.onclick = function () {
-    list.innerHTML = ""; // Limpia la lista cada vez
+    list.innerHTML = "";
 
     for (let p of pronoun) {
       for (let a of adj) {
@@ -18,7 +18,7 @@ window.onload = function () {
             const domain = p + a + n + ext;
             addToList(domain);
 
-            // Domain hack
+           
             const extNoDot = ext.replace(".", "");
             if (n.endsWith(extNoDot)) {
               let hackDomain = p + a + n.replace(extNoDot, "") + ext;
